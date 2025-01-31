@@ -1,7 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap');
 
-html,
-body {
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* --- Utilities --- */
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+    font-family: "Source Code Pro", serif;
+    font-size: 0.8125rem;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.avatar-img {
+    width: auto;
+    height: 34px;
+    border-radius: 50%;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid #C6C6C6;
+    padding: 5px 16px;
+    background-color: #FFFFFF;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img {
+    width: 127px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #FFFFFF;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    padding: 11px 16px;
+}
+
+.card-user-info p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.card-header > div:last-child p {
+    font-size: 0.75rem;
+}
+
+.card-feature {
+    margin: 0;
+}
+
+.card-content {
+    padding: 21px 16px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.card-content p {
+    margin: 12px 0;
+}
+
+.card-content:last-child p {
+    margin-bottom: 0;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn img {
+    width: 23px;
+    height: 23px;
+}
+
+.btn:hover img,
+.btn:focus img {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.3);
 }
