@@ -53,6 +53,7 @@ header {
 /* Card Styling */
 .card {
     background-color: #FFFFFF;
+    margin-bottom: 25px;
 }
 
 .card-header {
